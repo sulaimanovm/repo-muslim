@@ -6,7 +6,7 @@ metadata:
     some-label: some-label-value
 spec:
   containers:
-  - name: jenkins-slave
+  - name: jenkins-slave-muslim
     image: mshaibek/jenkins-slave-312
     command:
     - cat
