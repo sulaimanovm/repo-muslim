@@ -6,7 +6,7 @@ metadata:
     some-label: some-label-value
 spec:
   containers:
-  - name: jenkins-slave-muslim
+  - name: jenkins-slave
     image: mshaibek/jenkins-slave-312
     command:
     - cat
@@ -27,7 +27,7 @@ spec:
       properties([
         pipelineTriggers([
           [$class: 'GitHubPushTrigger'],
-//          pollSCM('*/4 * * * *'), // poll every 3 minutes
+    //      pollSCM('*/3 * * * *'), // poll every 3 minutes
           ])
         ])
       checkout scm
