@@ -1,4 +1,4 @@
 namespace=webapi-dev
-apiversion=1.12
-webversion=1.12
+apiversion=1.11
+webversion=1.11
 cluster=eks-dev
