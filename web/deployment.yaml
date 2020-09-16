@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: marsel-demo-web
+  name: muslim-demo-web
   namespace: NAMESPACE
   labels:
-    app: marsel-demo-web
+    app: muslim-demo-web
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: marsel-demo-web
+      app: muslim-demo-web
   template:
     metadata:
       labels:
-        app: marsel-demo-web
+        app: muslim-demo-web
     spec:
       containers:
-      - name: marsel-demo-web
+      - name: muslim-demo-web
         image: 401413892014.dkr.ecr.us-east-1.amazonaws.com/webapp:IMAGEVERSION
         ports:
         - containerPort: 80
